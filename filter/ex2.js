@@ -15,7 +15,16 @@ Exemple d'entrée:
 
  */
 
+let i = 0;
+let result = [];
 function getMultiplesOf(numbers, n) {
+	numbers.filter (function(number){
+		if(number % n === 0){
+			result[i] = number;
+			i++;
+		}
+	});
+	return(result);
 }
 
 // Ne pas modifier l'export

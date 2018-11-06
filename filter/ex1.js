@@ -10,8 +10,16 @@ Sortie attendue:
   [7, 2, 0, 3, 11]
 
  */
-
+let result = [];
+let i = 0;
 function getPositiveNumbers(numbers) {
+	numbers.filter(function(number){
+		if(number >= 0){
+			result[i] = number;
+			i++;
+		}
+	});
+	return(result);
 }
 
 // Si besoin, tu peux toujours visualiser le résultat avec console.log,

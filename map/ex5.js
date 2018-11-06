@@ -11,8 +11,20 @@ Exemple de tableau d'entrée:
 Tableau renvoyé par multiplyOddIndices:
   [3, 8, 11, 39, 19, 35]
 */
-
+let i = 0;
+let result = [];
 function multiplyOddIndices(numbers) {
+	numbers.map(function(number){
+		if(i % 2 != 0){
+			result[i] = (number * i);
+			i++;
+		}
+		else{
+			result[i] = (number);
+			i++;
+		}
+	});
+	return(result);
 }
 
 module.exports = multiplyOddIndices;
